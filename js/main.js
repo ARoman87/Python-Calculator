@@ -1,0 +1,43 @@
+
+function darkMode() {
+    let bodyElement = document.body;
+    let element1 = document.getElementById("one");
+    let element2 = document.getElementById("two");
+    let element3 = document.getElementById("three");
+    let element4 = document.getElementById("four");
+    let element5 = document.getElementById("five");
+    let element6 = document.getElementById("six");
+    let element7 = document.getElementById("seven");
+    let element8 = document.getElementById("eight");
+    let element9 = document.getElementById("nine");
+    let element10 = document.getElementById("ten");
+    let element11 = document.getElementById("moon");
+    let element12 = document.getElementById("ac");
+    let element13 = document.getElementById("mult");
+    let element14 = document.getElementById("sum");
+    let element15 = document.getElementById("sub");
+    let element16 = document.getElementById("dot");
+    let element17 = document.getElementById("division");
+    let element18 = document.getElementById("delete");
+    let element19 = document.getElementById("equals");
+    element1.classList.toggle("button-dark");
+    element2.classList.toggle("button-dark");
+    element3.classList.toggle("button-dark");
+    element4.classList.toggle("button-dark");
+    element5.classList.toggle("button-dark");
+    element6.classList.toggle("button-dark");
+    element7.classList.toggle("button-dark");
+    element8.classList.toggle("button-dark");
+    element9.classList.toggle("button-dark");
+    element10.classList.toggle("button-dark");
+    element11.classList.toggle("button-dark-moon");
+    element12.classList.toggle("button-dark");
+    element13.classList.toggle("button-dark");
+    element14.classList.toggle("button-dark");
+    element15.classList.toggle("button-dark");
+    element16.classList.toggle("button-dark");
+    element17.classList.toggle("button-dark");
+    element18.classList.toggle("button-dark");
+    element19.classList.toggle("button-dark");
+    bodyElement.classList.toggle("dark-mode")
+};

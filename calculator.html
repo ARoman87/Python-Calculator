@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pyscript.net/alpha/pyscript.css" />
+    <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+    <script src="/js/main.js"></script>
+    <title>Python Calculator</title>
+</head>
+
+<body id="body">
+    <div class="mode-toggle">
+        <button class="moonButton" onclick="darkMode()" id="moon"><i class="fa fa-adjust"></i></i></button>
+    </div>
+    <div class="calculator-container">
+        <div class="calculator-output">
+            <div class="previous-output" id="input"></div>
+            <div class="current-output" id="output"></div>
+        </div>
+        <button class="span-two" id="ac" pys-onClick="sign_clicked">AC</button>
+        <button id="delete" pys-onClick="sign_clicked">DEL</button>
+        <button id="division" pys-onClick="sign_clicked">÷</button>
+        <button id="one" pys-onClick="numbersClicked">1</button>
+        <button id="two" pys-onClick="numbersClicked">2</button>
+        <button id="three" pys-onClick="numbersClicked">3</button>
+        <button id="mult" pys-onClick="sign_clicked">*</button>
+        <button id="four" pys-onClick="numbersClicked">4</button>
+        <button id="five" pys-onClick="numbersClicked">5</button>
+        <button id="six" pys-onClick="numbersClicked">6</button>
+        <button id="sum" pys-onClick="sign_clicked">+</button>
+        <button id="seven" pys-onClick="numbersClicked">7</button>
+        <button id="eight" pys-onClick="numbersClicked">8</button>
+        <button id="nine" pys-onClick="numbersClicked">9</button>
+        <button id="sub" pys-onClick="sign_clicked">-</button>
+        <button class="bottom-left" id="dot" pys-onClick="numbersClicked">.</button>
+        <button id="ten" pys-onClick="numbersClicked">0</button>
+        <button class="span-two bottom-right" id="equals" pys-onClick="sign_clicked">=</button>
+    </div>
+
+    <py-script src="calculator.py">
+
+    </py-script>
+
+
+
+
+</body>
+
+</html>

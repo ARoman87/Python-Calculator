@@ -1,0 +1,130 @@
+body {
+    padding: 0;
+    margin: 0;
+    
+}
+
+.dark-mode {
+    background-color: #35363A;
+    color: white;
+}
+
+.mode-toggle {
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.mode-toggle button {
+    font-size: 25px;
+    border: none;
+    cursor: pointer;
+    background-color: lightgray;
+    
+}
+
+.mode-toggle button:hover {
+    background-color: rgba(211, 211, 211, .5);
+}
+
+.moonButton {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.moodButton i {
+    align-items: center;
+}
+
+.calculator-container{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    min-height: 70vh;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 100px);
+    padding-bottom: 50px;
+    
+}
+
+.calculator-container button {
+    cursor: pointer;
+    border: 1px solid white;
+    font-size: 2rem;
+    outline: none;
+    background-color: darkgray;
+}
+
+.button-dark {
+    background-color: #282829 !important;
+    color: white;
+    border: black 1px solid !important;
+}
+.button-dark-moon {
+    color: rgb(185, 185, 185)!important;
+    background-color: #282829 !important;
+}
+
+.button-dark-moon:hover {
+    background-color: #474748 !important;
+
+}
+
+.button-dark:hover {
+    background-color: #474748 !important;
+}
+
+.calculator-container button:hover {
+    background-color: lightgray;
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+.calculator-output {
+    grid-column: 1 / -1;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    border-radius: 10px 10px 0 0;
+    outline: none;
+}
+.bottom-left {
+    border-radius: 0 0 0 10px;
+}
+
+.bottom-right {
+    border-radius: 0 0 10px 0;
+}
+
+.previous-output {
+    font-size: 1.5rem;
+    color: rgba(255, 255, 255, .75);
+}
+
+.current-output {
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 1);
+}
+
+@media only screen and (max-width: 400px) {
+    .calculator-container{
+        grid-template-columns: repeat(4, 85px);
+        grid-template-rows: minmax(120px, auto) repeat(5, 85px);        
+}}
+
+@media only screen and (max-width: 300px) {
+    .calculator-container {
+        grid-template-columns: repeat(4, 65px);
+        grid-template-rows: minmax(120px, auto) repeat(5, 65px); 
+    }
+}
